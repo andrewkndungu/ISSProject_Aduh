@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp"
+    android:paddingBottom="50dp"
+    android:paddingLeft="48dp"
+    android:paddingRight="48dp"
+    android:background="@drawable/pp"
+    tools:context="com.example.sonnie.issproject.Login">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+      >
+
+
+        <TextView
+            android:id="@+id/welcome_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome. Kindly sign in"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="22sp"
+            android:textAllCaps="true"/>
+
+
+        <EditText
+            android:id="@+id/email_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email address"
+            android:textColorHint="#0e0e0e"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="#0e0e0e"
+            android:inputType="textPassword" />
+
+        <CheckBox
+            android:id="@+id/login_showpassword_checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show password"
+            android:textSize="18sp"
+            android:textColor="#0e0"
+            android:layout_below="@+id/password_et"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/textview"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:onClick="onClick"
+            android:layout_marginTop="36dp"
+
+            app:srcCompat="@drawable/fingerprint" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_margin="15dp"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="LOG IN"
+            />
+
+
+        <TextView
+            android:id="@+id/signup_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Sign up"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
